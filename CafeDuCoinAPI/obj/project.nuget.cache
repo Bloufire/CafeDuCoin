@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "obYDPVhBaTjlkp/oD9KKXN5S4fkUcuSWSjiYtK/wzVJiz2xf3b5BtILdWC3hl/YY6yGRXx+aPVKHZyQQ4yN0OA==",
+  "dgSpecHash": "3ACVNR0wVy0W4ao9sU9Zpkm7yI3OtAp1arP+AbRZBpSli/V7ReSBiLua9f/br5D667Cwekc7JZbIhiPHW7hdUw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dev\\Documents\\Anisen\\CafeDuCoinAPI\\CafeDuCoinAPI.csproj",
+  "projectFilePath": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\CafeDuCoinAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dev\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Dev\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

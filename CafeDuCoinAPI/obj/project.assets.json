@@ -7231,11 +7231,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dev\\Documents\\Anisen\\CafeDuCoinAPI\\CafeDuCoinAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\CafeDuCoinAPI.csproj",
       "projectName": "CafeDuCoinAPI",
-      "projectPath": "C:\\Users\\Dev\\Documents\\Anisen\\CafeDuCoinAPI\\CafeDuCoinAPI.csproj",
+      "projectPath": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\CafeDuCoinAPI.csproj",
       "packagesPath": "C:\\Users\\Dev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dev\\Documents\\Anisen\\CafeDuCoinAPI\\obj\\",
+      "outputPath": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
