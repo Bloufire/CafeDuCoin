@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dev\\Documents\\Anisen\\CafeDuCoinAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|c:\\users\\dev\\documents\\anisen\\cafeducoinapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|c:\\users\\dev\\documents\\anisen\\cafeducoinapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|c:\\users\\dev\\documents\\anisen\\cafeducoinapi\\cafeducoincontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|solutionrelative:cafeducoincontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\Anisen\\CafeDuCoinAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\Anisen\\CafeDuCoinAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-20T13:06:09.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\Anisen\\CafeDuCoinAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\Anisen\\CafeDuCoinAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T13:05:35.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CafeDuCoinContext.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\Anisen\\CafeDuCoinAPI\\CafeDuCoinContext.cs",
+              "RelativeDocumentMoniker": "CafeDuCoinContext.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\Anisen\\CafeDuCoinAPI\\CafeDuCoinContext.cs",
+              "RelativeToolTip": "CafeDuCoinContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T10:39:24.698Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
