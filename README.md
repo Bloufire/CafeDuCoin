@@ -22,6 +22,8 @@ Run this command on your postgres instance
 Go to /CafeDuCoinAPI/bin/Release/net8.0/
 Run CafeDuCoinAPI.exe
 Check Swagger at http://localhost:5000/swagger/index.html
+
+PS : You can run the API directly from Visual Studio but you'll have to change the baseURL in /cafeducoin/src/services/axios.js to match with the new port
 ```
 
 Execute a POST request (via SwaggerUI) on endpoint /games/mock in order to create some random games in the database
