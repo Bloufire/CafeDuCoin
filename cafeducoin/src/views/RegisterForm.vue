@@ -25,6 +25,7 @@
 </template>
 
 <script>
+// Import the axios instance configured with base URL and interceptors
 import axios from '../services/axios';
 
 export default {
@@ -37,8 +38,10 @@ export default {
     };
   },
   methods: {
+    // Method to handle user registration
     async register() {
         try {
+          // Send a POST request to the server with the registration details
           const response = await axios.post('/users/register', {
               username: this.username,
               email: this.email,
@@ -48,10 +51,10 @@ export default {
           // Handle successful login (e.g., store token, redirect user)
           console.log(response.data);
 
+          // Redirect the user to the login page
           this.$router.push('/login');
         } catch (error) {
-            // Handle login error (e.g., display error message)
-            console.error(error);
+          console.error(error);
         }
     }
   }

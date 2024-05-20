@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\Dev\Documents\GitHub\CafeDuCoin\CafeDuCoinAPI\bin\Release\net8.0\publish\</_PublishTargetUrl>
-    <History>True|2024-05-20T14:25:12.5897807Z;</History>
+    <History>True|2024-05-20T14:29:59.3926569Z;True|2024-05-20T16:25:12.5897807+02:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>

@@ -9,24 +9,31 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure CORS policy to allow requests from the Vue.js application
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowVueApp",
         builder =>
-        {
-            builder.WithOrigins("http://localhost:8080")
-                .AllowAnyMethod()
+        { 
+            builder.WithOrigins("http://localhost:8080") // Allow requests from this origin
+                .AllowAnyMethod() 
                 .AllowAnyOrigin()
                 .AllowAnyHeader();
         });
 });
+
 builder.Services.AddControllers();
+
+// Configure Entity Framework to use PostgreSQL with connection string from configuration
 builder.Services.AddDbContext<CafeDuCoinContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+// Add a filter to show detailed exceptions in development
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+// Configure Identity services with default token providers
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<CafeDuCoinContext>()
     .AddDefaultTokenProviders();
+// Configure JWT authentication
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -46,11 +53,13 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+// Configure authorization policies
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("RequiredLoggedIn", policy => policy.RequireRole("User").RequireAuthenticatedUser());
 });
 
+// Add services for API endpoint exploration and Swagger generation
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -81,27 +90,34 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+// Build the application
 var app = builder.Build();
 
+// Apply any pending migrations on application startup
 using (var Scope = app.Services.CreateScope())
 {
     var context = Scope.ServiceProvider.GetRequiredService<CafeDuCoinContext>();
     context.Database.Migrate();
 }
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 
+// Enable middleware to serve generated Swagger as a JSON endpoint
+app.UseSwagger();
+// Enable middleware to serve Swagger UI
+app.UseSwaggerUI();
+
+// Redirect HTTP requests to HTTPS
 app.UseHttpsRedirection();
 
+// Enable authentication and authorization middleware
 app.UseAuthentication();
 app.UseAuthorization();
 
+// Map controller endpoints
 app.MapControllers();
 
+// Enable CORS with the specified policy
 app.UseCors("AllowVueApp");
 
+// Run the application
 app.Run();

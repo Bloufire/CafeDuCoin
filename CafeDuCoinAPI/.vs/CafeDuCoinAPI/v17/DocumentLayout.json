@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|c:\\users\\dev\\documents\\github\\cafeducoin\\cafeducoinapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|c:\\users\\dev\\documents\\github\\cafeducoin\\cafeducoinapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|c:\\users\\dev\\documents\\github\\cafeducoin\\cafeducoinapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|c:\\users\\dev\\documents\\github\\cafeducoin\\cafeducoinapi\\controllers\\loanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|solutionrelative:controllers\\loanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|c:\\users\\dev\\documents\\github\\cafeducoin\\cafeducoinapi\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|solutionrelative:controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|c:\\users\\dev\\documents\\github\\cafeducoin\\cafeducoinapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|c:\\users\\dev\\documents\\github\\cafeducoin\\cafeducoinapi\\dtos\\userhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|solutionrelative:dtos\\userhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|c:\\users\\dev\\documents\\github\\cafeducoin\\cafeducoinapi\\dtos\\usercard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|solutionrelative:dtos\\usercard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|c:\\users\\dev\\documents\\github\\cafeducoin\\cafeducoinapi\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|solutionrelative:models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8BE04C19-0057-4ABD-834D-39E5B7810AEC}|CafeDuCoinAPI.csproj|c:\\users\\dev\\documents\\github\\cafeducoin\\cafeducoinapi\\cafeducoincontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,44 +42,111 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-20T13:06:09.838Z"
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T15:22:48.121Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAC4AAAADAAAA",
+              "DocumentIndex": 1,
+              "Title": "LoansController.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\Controllers\\LoansController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoansController.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\Controllers\\LoansController.cs",
+              "RelativeToolTip": "Controllers\\LoansController.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowFkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T13:05:35.115Z",
+              "WhenOpened": "2024-05-20T15:21:19.698Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "GamesController.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\Controllers\\GamesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GamesController.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\Controllers\\GamesController.cs",
+              "RelativeToolTip": "Controllers\\GamesController.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAcwHwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T15:20:19.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAwwHwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T15:18:18.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserHistory.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\DTOs\\UserHistory.cs",
+              "RelativeDocumentMoniker": "DTOs\\UserHistory.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\DTOs\\UserHistory.cs",
+              "RelativeToolTip": "DTOs\\UserHistory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T15:17:56.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserCard.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\DTOs\\UserCard.cs",
+              "RelativeDocumentMoniker": "DTOs\\UserCard.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\DTOs\\UserCard.cs",
+              "RelativeToolTip": "DTOs\\UserCard.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T15:17:35.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\Models\\Game.cs",
+              "RelativeDocumentMoniker": "Models\\Game.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\Models\\Game.cs",
+              "RelativeToolTip": "Models\\Game.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T15:15:53.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CafeDuCoinContext.cs",
               "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\CafeDuCoinContext.cs",
               "RelativeDocumentMoniker": "CafeDuCoinContext.cs",
               "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\CafeDuCoin\\CafeDuCoinAPI\\CafeDuCoinContext.cs",
               "RelativeToolTip": "CafeDuCoinContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAABfAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T10:39:24.698Z"
+              "WhenOpened": "2024-05-20T15:14:38.111Z",
+              "EditorCaption": ""
             }
           ]
         }

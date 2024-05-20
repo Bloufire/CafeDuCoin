@@ -28,6 +28,7 @@
 </template>
 
 <script>
+// Import the axios instance configured with base URL and interceptors
 import axios from '../services/axios';
 
 export default {
@@ -42,28 +43,33 @@ export default {
     },
     async created() {
         try {
+            // Fetch game details from the server using the game ID prop
             const response = await axios.get(`/games/${this.id}`);
             this.game = response.data;
+            // Fetch loan history of the game
             const loanResponse = await axios.get(`/games/${this.id}/history`);
             this.loans = loanResponse.data;
+            // Determine if the game is currently borrowed by checking if any loan has no return date
             this.borrowed = this.loans.some(loan => !loan.loanReturnDate);
         } catch (error) {
             console.error(error);
         }
     },
     methods: {
+        // Method to borrow the game
         async borrowGame() {
             try {
                 const gameName = this.game.name;
 
-                const token = localStorage.getItem('token');
+                const token = localStorage.getItem('token'); // Retrieve the token from localStorage
                 console.log(token);
                 const config = {
                     headers: {
-                        'Authorization': `Bearer ${token}`
+                        'Authorization': `Bearer ${token}` // Set the Authorization header with the token
                     }
                 };
 
+                // Send a PUT request to borrow the game
                 await axios.put(`/loans/manage/${gameName}`, null, config);
                 this.$router.go(); // Refresh the page
             } catch (error) {
@@ -74,13 +80,14 @@ export default {
             try {
                 const gameName = this.game.name;
 
-                const token = localStorage.getItem('token');
+                const token = localStorage.getItem('token'); // Retrieve the token from localStorage
                 const config = {
                     headers: {
-                        'Authorization': `Bearer ${token}`
+                        'Authorization': `Bearer ${token}` // Set the Authorization header with the token
                     }
                 };
 
+                // Send a PUT request to return the game
                 await axios.put(`/loans/manage/${gameName}`, null, config);
                 this.$router.go(); // Refresh the page
             } catch (error) {
@@ -89,6 +96,7 @@ export default {
         }
     },
     computed: {
+        // Computed property to check if the current user is the borrower
         isCurrentUserBorrower() {
             // Get the username of the current user from localStorage
             const currentUser = localStorage.getItem('userName');

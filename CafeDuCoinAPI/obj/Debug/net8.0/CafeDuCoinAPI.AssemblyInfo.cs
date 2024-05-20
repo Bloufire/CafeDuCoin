@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CafeDuCoinAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a04f5c5146a14c612c6aabc3e4785c56d5fb4ef2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d12ff04af8329ea6b6d17313b141fb6cb7041ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("CafeDuCoinAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CafeDuCoinAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

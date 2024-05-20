@@ -17,6 +17,7 @@
 </template>
 
 <script>
+// Import the axios instance configured with base URL and interceptors
 import axios from '../services/axios';
 
 export default {
@@ -29,17 +30,18 @@ export default {
   methods: {
     async login() {
         try {
+            // Send a POST request to the server with the username and password
             const response = await axios.post('/users/login', {
                 username: this.username,
                 password: this.password
             });
-            // Handle successful login (e.g., store token, redirect user)
-            console.log(response.data);
-
+            // Handle successful login
             const token = response.data.token;
+            // Store the token and username in localStorage
             localStorage.setItem('token', token);
             localStorage.setItem('userName', this.username);
 
+            // Redirect the user to the games page
             this.$router.push('/games');
         } catch (error) {
             // Handle login error (e.g., display error message)

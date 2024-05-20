@@ -2,8 +2,10 @@
 
 namespace CafeDuCoinAPI.DTOs
 {
+    // Define the UserHistory class to represent a DTO (Data Transfer Object) for displaying user loan history
     public class UserHistory
     {
+        // Constructor with a loan parameter to initialize properties
         public UserHistory(Loan loan)
         {
             this.Game = loan.Game.Name;

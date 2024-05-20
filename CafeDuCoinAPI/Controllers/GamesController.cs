@@ -29,6 +29,7 @@ namespace CafeDuCoinAPI.Controllers
             _context = context;
         }
 
+        // Get all games with their availability status
         [HttpGet("/games")]
         public async Task<ActionResult<IEnumerable<GameCard>>> GetGames()
         {
@@ -53,6 +54,7 @@ namespace CafeDuCoinAPI.Controllers
             return Ok(gameWithStatus);
         }
 
+        // Get details of a specific game by name
         [HttpGet("/games/{gameName}")]
         public async Task<ActionResult<GameCard>> GetGame(string gameName)
         {
@@ -68,6 +70,7 @@ namespace CafeDuCoinAPI.Controllers
             return new GameCard(game, available == null ? true : (available.LoanReturnDate == null ? false : true));
         }
 
+        // Get loan history of a specific game by name
         [HttpGet("/games/{gameName}/history")]
         public async Task<ActionResult<IEnumerable<GameHistory>>> GetHistory(string gameName)
         {
@@ -89,6 +92,7 @@ namespace CafeDuCoinAPI.Controllers
             return Ok(history.OrderByDescending(x => x.LoanDate));
         }
 
+        // Generate and add mock games to the database
         [HttpPost("/games/mock")]
         public async Task<ActionResult<IEnumerable<GameCard>>> MockGames()
         {
@@ -117,6 +121,7 @@ namespace CafeDuCoinAPI.Controllers
             return Ok(games);
         }
 
+        // Helper method to generate a random game name
         private static string GenerateName()
         {
             var adjective = Adjectives[Random.Next(Adjectives.Length)];

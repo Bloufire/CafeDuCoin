@@ -2,9 +2,11 @@
 
 namespace CafeDuCoinAPI.DTOs
 {
+    // Define the GameCard class to represent a DTO (Data Transfer Object) for displaying game information
     public class GameCard
     {
         public GameCard() { }
+        // Constructor with parameters to initialize properties
         public GameCard(Game game, bool available)
         {
             this.Name = game.Name;

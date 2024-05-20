@@ -23,30 +23,37 @@ namespace CafeDuCoinAPI.Controllers
             _configuration = configuration;
         }
 
+        // Endpoint for user registration
         [HttpPost("/users/register")]
         public async Task<ActionResult> Register(RegisterModel registerModel)
         {
+            // Check if model state is valid
             if (ModelState.IsValid) 
             {
+                // Check if a user with the provided username already exists
                 var userCheck = await _userManager.FindByNameAsync(registerModel.Username);
                 if(userCheck != null)
                 {
                     return NotFound($"User with username {registerModel.Username} already exists.");
                 }
 
+                // Create a new ApplicationUser object with the provided details
                 var user = new ApplicationUser
                 {
                     UserName = registerModel.Username,
                     Email = registerModel.Email
                 };
+                // Attempt to create the user with the provided password
                 var result = await _userManager.CreateAsync(user, registerModel.Password);
 
-                if(result.Succeeded)
+                // If user creation is successful, return success response
+                if (result.Succeeded)
                 {
                     return Ok(new { Result = "User created successfully" });
                 }
 
-                foreach(var error in result.Errors)
+                // If user creation fails, add errors to model state and return bad request response
+                foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
@@ -55,15 +62,20 @@ namespace CafeDuCoinAPI.Controllers
             return BadRequest(ModelState);
         }
 
+        // Endpoint for user login
         [HttpPost("/users/login")]
         public async Task<ActionResult> Login(LoginModel loginModel)
         {
+            // Check if model state is valid
             if (ModelState.IsValid)
             {
+                // Find the user with the provided username
                 var user = await _userManager.FindByNameAsync(loginModel.Username);
 
+                // If user is found and password is correct, generate JWT token
                 if (user != null && await _userManager.CheckPasswordAsync(user, loginModel.Password))
                 {
+                    // Define claims for JWT token
                     var claims = new[]
                     {
                         new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
@@ -72,9 +84,11 @@ namespace CafeDuCoinAPI.Controllers
                         new Claim("username", user.UserName)
                     };
 
+                    // Generate symmetric security key and signing credentials
                     var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
                     var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
+                    // Create JWT token with specified claims, expiration, and signing credentials
                     var token = new JwtSecurityToken(
                         issuer: _configuration["Jwt:Issuer"],
                         audience: _configuration["Jwt:Issuer"],
@@ -82,19 +96,23 @@ namespace CafeDuCoinAPI.Controllers
                         expires: DateTime.Now.AddMinutes(30),
                         signingCredentials: creds);
 
+                    // Return token in response
                     return Ok(new
                     {
                         token = new JwtSecurityTokenHandler().WriteToken(token)
                     });
                 }
 
+                // Return unauthorized response if user is not found or password is incorrect
                 return Unauthorized();
             }
 
+            // Return bad request response if model state is invalid
             return BadRequest(ModelState);
         }
     }
 
+    // Model for user registration
     public class RegisterModel
     {
         public string Username { get; set; }
@@ -103,6 +121,7 @@ namespace CafeDuCoinAPI.Controllers
         public string ConfirmPassword { get; set; }
     }
 
+    // Model for user login
     public class LoginModel
     {
         public string Username { get; set; }

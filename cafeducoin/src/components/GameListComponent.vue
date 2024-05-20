@@ -13,6 +13,7 @@
 </template>
 
 <script>
+// Import the uuid library for generating unique identifiers
 import { v4 as uuidv4 } from 'uuid';
 
 export default {
@@ -20,12 +21,15 @@ export default {
     games: Array // Array of game objects
   },
   methods: {
+    // Method to navigate to the game detail page
     viewDetails(gameName) {
-      // Navigate to game detail page using Vue Router
+      // Use Vue Router to push a new route to the game detail page
       this.$router.push(`/games/${gameName}`);
     },
+    // Method to generate a random image URL
     generateRandomImageUrl() {
       const gameId = uuidv4();
+      // Return a random image URL using the unique identifier
       return `https://picsum.photos/200/200/?random=${gameId}`;
     }
   }
